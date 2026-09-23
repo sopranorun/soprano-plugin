@@ -47,12 +47,12 @@ decides — pick the FIRST row that matches and do only that row:
 | `scope.seal.sealed` true | Stop: sealed; the next door is `/soprano:breakdown`. |
 | customer, `scope.seal.internal` true, `sealed` false | Stop: the inner seal landed; the customer's half waits in the portal. Nothing to draft — the merged baseline IS the document. |
 | `items.total === 0` | **PACKAGE** |
-| customer, `items.unsent > 0` | Stop: the studio reads and sends the list once, on the screen (a customer nobody can open the portal for is invited there first). |
+| customer, `items.unsent > 0` | Stop: the studio reads and sends the list once, in the work's Pending items room (a customer nobody can open the portal for is invited there first). |
 | `scope.readable` null and `scope.document` null | Stop: no installation reaches the repository; say so — the App is installed from the screen. |
 | `scope.readable === false` or `scope.document.shape === 'unreadable'` | Stop: GitHub could not be read; say so — an unread repository is not an empty one. Never write. |
 | `scope.document.shape === 'foreign'` | Stop: somebody else's document sits at the scope path — `/soprano:scope` holds that conversation. |
 | no `scope.pullRequest` | Stop: the scope draft is next — `/soprano:scope` writes it as a draft pull request. |
-| customer, PR open, a round B has answers and no `processedAt` | Stop: press "SCOPE'a işle" on the screen — the cloud adds the answers to the PR. Then come back. |
+| customer, PR open, a round B has answers and no `processedAt` | Stop: press "SCOPE'a işle" in the work's Questions room — the cloud adds the answers to the PR. Then come back. |
 | PR open, `scope.stamps > 0` | Stop: answers wait in the draft as round stamps — `/soprano:scope` weaves them into their sections. |
 | customer, PR open, `scope.openQuestions > 0` | **ROUND B** |
 | internal, PR open, `scope.openQuestions > 0` | Stop: an internal project has no round — the owner settles the draft's open questions with `/soprano:scope`. |
@@ -110,7 +110,7 @@ and not retried. Stop:
 
 - customer project: the studio reads, drops what does not apply, and sends
   the list ONCE from the screen — nothing reaches the customer until then.
-- internal project: nothing is sent. The items wait in the Keşif room, the
+- internal project: nothing is sent. The items wait in the Pending items room, the
   studio marks each one arrived when it is in hand, and `/soprano:breakdown`
   fences the work that needs one — its issue is born blocked until the item
   arrives.
@@ -123,7 +123,7 @@ questions** section: ask what would settle each line — one or two sentences
 to answer, never a question the document already answers. Project
 language. Show the list, ask (SHOW, ASK, THEN RECORD), then
 `record_discovery({ project_id, round: 'b', questions })`. Stop: answers
-are collected on the screen and committed to the PR from there; run again
+are collected in the work's Questions room and committed to the PR from there; run again
 when they are in.
 
 ## What is NOT settled here

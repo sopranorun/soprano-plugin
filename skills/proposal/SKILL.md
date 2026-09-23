@@ -46,8 +46,9 @@ with the `owner/repo` name before anything else:
    - null → do **ROUND A** (below), then stop.
    - recorded but never sent (`sentAt` null) → the customer has not seen
      the questions. Ask with AskUserQuestion: send them first from the
-     work's own Proposal room in Soprano — the work's page, Docs → Proposal
-     (stop) · write the paper now, every question an assumption.
+     work's own Questions room in Soprano — the work's page, Docs → Questions,
+     where everything the customer is asked lives (stop) · write the paper
+     now, every question an assumption.
    - sent, some unanswered → say how many are answered and ask: wait for
      the rest (stop) · write the paper now, the rest as assumptions.
    - every question answered → continue.
@@ -138,9 +139,10 @@ write the paper without asking. "Revise" takes the correction, prints the
 list again and asks again. On "record", call
 `record_discovery({ project_id: work.id, round: 'a', questions })` — it
 does not move the work's stage — and stop: the studio corrects the wording
-and sends the questions from the work's own Proposal room in Soprano (the
-work's page, Docs → Proposal — the customer's page no longer hosts them),
-the answers are collected there, and `/soprano:proposal` runs again to write
+and sends the questions from the work's own Questions room in Soprano (the
+work's page, Docs → Questions — everything the customer is asked lives
+there; the Proposal room shows only how far the answers are), the answers
+are collected there, and `/soprano:proposal` runs again to write
 the paper. On
 "write the paper without asking", continue at step 4 with every
 price-changing unknown as an assumption by name: a thick-assumption
