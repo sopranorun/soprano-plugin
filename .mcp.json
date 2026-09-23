@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "soprano": {
+      "type": "http",
+      "url": "${SOPRANO_MCP_URL:-https://app.soprano.run/api/mcp}"
+    }
+  }
+}

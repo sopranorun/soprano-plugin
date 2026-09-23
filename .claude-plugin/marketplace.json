@@ -1,0 +1,22 @@
+{
+  "name": "soprano",
+  "description": "Soprano's own plugin for Claude Code — the studio OS at the bench.",
+  "owner": {
+    "name": "Soprano",
+    "url": "https://app.soprano.run"
+  },
+  "plugins": [
+    {
+      "name": "soprano",
+      "source": "./",
+      "description": "Soprano studio OS inside your Claude Code: pull work, carry roles, record through MCP. Gates and trails stay in the cloud.",
+      "category": "productivity",
+      "keywords": [
+        "soprano",
+        "studio",
+        "github",
+        "mcp"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "soprano",
+  "version": "0.26.0",
+  "description": "Soprano studio OS inside your Claude Code: pull work, carry roles, record through MCP. Gates and trails stay in the cloud.",
+  "author": {
+    "name": "Soprano",
+    "url": "https://app.soprano.run"
+  },
+  "homepage": "https://app.soprano.run"
+}
